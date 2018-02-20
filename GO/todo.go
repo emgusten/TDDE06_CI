@@ -201,6 +201,7 @@ func Handlers() *http.ServeMux {
 }
 
 func main() {
+	fmt.Printf("Running Server..")
 	// Listen on port 5050
 	err := http.ListenAndServe(":8080", Handlers())
 	if err != nil {

@@ -13,8 +13,9 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc
 #  them by prefixing each apt-get statement with DEBIAN_FRONTEND=noninteractive
 RUN \
   apt-get update && \
-  apt-get install -y python-software-properties software-properties-common postgresql-9.3 postgresql-client-9.3 postgresql-contrib-9.3 && \
-  cp schema.sql /docker-entrypoint-initdb.d/
+  apt-get install -y python-software-properties software-properties-common postgresql-9.3 postgresql-client-9.3 postgresql-contrib-9.3 
+
+COPY schema.sql /docker-entrypoint-initdb.d/
 
 # Note: The official Debian and Ubuntu images automatically ``apt-get clean``
 # after each ``apt-get``
