@@ -41,4 +41,4 @@ You can also use `go run todo.go` to run the server directly.
 ## Test
 
 Test the system to make sure everything works.
-This is done by running `go test` in the application folder.
+This is done by running `go test` in the application folder. Random words.
