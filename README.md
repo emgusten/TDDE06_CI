@@ -31,7 +31,7 @@ In order to setup the database schema, run `psql -f schema.sql db_name`.
 ## NGINX
 
 There is a configuration ready for using NGINX as a reverse proxy (in `nginx.conf`).
-However, the url to the application may need to be updated.
+However, the url to the application may need to be updated. Random words.
 
 ## Run
 
